@@ -14,11 +14,21 @@ const Contact = () => {
       <p className={styles.paragraph}>
         También me encuentras en:
         <br />
-        <a href={personalInfo.github} target="_blank" className={styles.link}>
+        <a
+          href={personalInfo.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
           GitHub
         </a>{" "}
         |{" "}
-        <a href={personalInfo.linkedin} target="_blank" className={styles.link}>
+        <a
+          href={personalInfo.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.link}
+        >
           LinkedIn
         </a>
       </p>
