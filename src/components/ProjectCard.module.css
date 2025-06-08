@@ -7,7 +7,7 @@
 }
 
 .title {
-  @apply text-xl font-semibold text-white dark:text-primary-light;
+  @apply text-xl font-semibold text-white dark:text-pixel-light;
 }
 
 .description {
@@ -15,5 +15,5 @@
 }
 
 .link {
-  @apply inline-block mt-2 text-primary-light underline hover:text-white transition;
+  @apply inline-block mt-2 text-pixel-light underline hover:text-white transition;
 }

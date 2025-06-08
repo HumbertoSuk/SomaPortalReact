@@ -8,11 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#8b5cf6',
-          dark: '#6b21a8',
-          light: '#ddd6fe'
-        }
+        pixel: {
+          DEFAULT: '#c084fc',
+          dark: '#7e22ce',
+          light: '#e9d5ff',
+          bg: '#1a0a2a',
+          soft: '#2a0c45',
+        },
       },
       fontFamily: {
         pixel: ['"Press Start 2P"', 'monospace'], // Añade esta

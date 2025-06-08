@@ -3,5 +3,5 @@
 }
 
 .text {
-  @apply text-center py-6 text-xs md:text-sm text-white/60 tracking-widest uppercase font-semibold transition-all duration-300 hover:text-primary-light;
+  @apply text-center py-6 text-xs md:text-sm text-white/60 tracking-widest uppercase font-semibold transition-all duration-300 hover:text-pixel-light;
 }
