@@ -1,7 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="text-center py-6 text-sm text-white/70 tracking-widest uppercase font-bold border-t border-white/20">
-      © 2025 Humberto López
+    <footer className="w-full mt-16 border-t border-white/20 bg-white/5 dark:bg-white/5 backdrop-blur-sm shadow-inner">
+      <div className="text-center py-6 text-xs md:text-sm text-white/60 tracking-widest uppercase font-semibold transition-all duration-300 hover:text-primary-light">
+        © 2025 Humberto López — All Rights Reserved
+      </div>
     </footer>
   );
 };

@@ -1,0 +1,7 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    margin-top: 3rem; /* separa del navbar */
+  }
+  

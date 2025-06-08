@@ -14,6 +14,7 @@ const AboutSection = () => {
       >
         {profile.about.heading}
       </motion.h2>
+
       <motion.p
         className={styles.paragraph}
         initial={{ opacity: 0 }}

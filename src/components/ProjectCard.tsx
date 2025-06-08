@@ -1,31 +1,23 @@
-import { useEffect, useState } from "react";
+import type { Project } from "../data/projects";
 
-const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    const stored = localStorage.getItem("theme");
-    if (stored === "dark") {
-      document.documentElement.classList.add("dark");
-      setDarkMode(true);
-    }
-  }, []);
-
-  const toggle = () => {
-    const isDark = !darkMode;
-    setDarkMode(isDark);
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-    document.documentElement.classList.toggle("dark", isDark);
-  };
-
+const ProjectCard = ({ title, description, image, link }: Project) => {
   return (
-    <button
-      onClick={toggle}
-      className="fixed top-4 right-4 px-4 py-2 bg-white dark:bg-black text-black dark:text-white rounded-full shadow-lg border hover:bg-purple-200 dark:hover:bg-purple-800 transition-all z-50"
-    >
-      {darkMode ? "🌙 Oscuro" : "☀️ Claro"}
-    </button>
+    <div className="border rounded-lg p-4 shadow bg-white">
+      {image && <img src={image} alt={title} className="mb-2 rounded" />}
+      <h3 className="font-bold text-lg">{title}</h3>
+      <p>{description}</p>
+      {link && (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 underline"
+        >
+          Ver más
+        </a>
+      )}
+    </div>
   );
 };
 
-export default ThemeToggle;
+export default ProjectCard;

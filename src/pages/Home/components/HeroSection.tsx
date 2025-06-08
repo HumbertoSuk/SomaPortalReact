@@ -5,14 +5,18 @@ import { profile } from "../../../data/profile";
 const HeroSection = () => {
   return (
     <section className={styles.heroSection}>
-      <motion.img
-        src={profile.avatar}
-        alt="Pixel avatar"
-        className={styles.avatar}
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 0.6 }}
-      />
+      <motion.div
+        className={styles.avatarContainer}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <img
+          src={profile.avatar}
+          alt="Pixel avatar"
+          className={styles.avatar}
+        />
+      </motion.div>
 
       <motion.h1
         className={styles.title}
