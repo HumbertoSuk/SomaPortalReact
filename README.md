@@ -109,3 +109,7 @@ export default tseslint.config({
   },
 });
 ```
+
+##  Licencia
+
+Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
