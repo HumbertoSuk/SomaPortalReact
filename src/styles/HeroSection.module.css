@@ -1,0 +1,17 @@
+
+.heroSection {
+    @apply text-center py-24 px-6 md:px-16;
+  }
+  
+  .title {
+    @apply text-4xl md:text-6xl font-bold mb-6 text-white dark:text-primary-light drop-shadow-lg;
+  }
+  
+  .highlight {
+    @apply text-primary-light;
+  }
+  
+  .subtitle {
+    @apply text-lg md:text-xl text-white/80 dark:text-white/60 max-w-2xl mx-auto;
+  }
+  
