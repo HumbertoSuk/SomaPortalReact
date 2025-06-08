@@ -1,17 +1,18 @@
 import type { Project } from "../data/projects";
+import styles from "./ProjectCard.module.css";
 
 const ProjectCard = ({ title, description, image, link }: Project) => {
   return (
-    <div className="border rounded-lg p-4 shadow bg-white">
-      {image && <img src={image} alt={title} className="mb-2 rounded" />}
-      <h3 className="font-bold text-lg">{title}</h3>
-      <p>{description}</p>
+    <div className={styles.card}>
+      {image && <img src={image} alt={title} className={styles.image} />}
+      <h3 className={styles.title}>{title}</h3>
+      <p className={styles.description}>{description}</p>
       {link && (
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 underline"
+          className={styles.link}
         >
           Ver más
         </a>

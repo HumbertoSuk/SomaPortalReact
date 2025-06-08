@@ -1,0 +1,19 @@
+.card {
+  @apply bg-white/10 dark:bg-white/5 p-6 rounded-xl border border-white/20 shadow hover:scale-105 transition;
+}
+
+.image {
+  @apply w-full h-48 object-cover rounded-md mb-4;
+}
+
+.title {
+  @apply text-xl font-semibold text-white dark:text-primary-light;
+}
+
+.description {
+  @apply text-white/70 dark:text-white/60 mb-4;
+}
+
+.link {
+  @apply inline-block mt-2 text-primary-light underline hover:text-white transition;
+}
