@@ -1,21 +1,20 @@
 export const profile = {
-  name: "July Suk",
+  name: "Humberto López",
   avatar: "/avatar-pixel.png",
   greeting: "★ ¡Hola, soy",
-  titleHighlight: "July Suk! ★",
+  titleHighlight: "Humberto López! ★",
   subtitle:
-    "Desarrolladora web con estilo retro, obsesionada con el pixel art, las animaciones suaves y los sistemas visuales al estilo GameBoy.",
+    "Desarrollador Full Stack apasionado por construir interfaces limpias, rápidas y funcionales.",
   about: {
     heading: "Sobre Mí",
     paragraph:
-      "Soy una desarrolladora creativa que fusiona tecnología y estética retro para crear experiencias memorables. Me especializo en construir interfaces que evocan nostalgia y usabilidad al mismo tiempo.",
+      "Me apasiona construir interfaces limpias, rápidas y funcionales que ofrezcan una experiencia agradable y eficiente.",
   },
-};
-
-export const personalInfo = {
-  email: "julysuk@example.com",
-  phone: "+52 123 456 7890",
-  location: "Mexicali, BC, México",
-  github: "https://github.com/julysuk",
-  linkedin: "https://linkedin.com/in/julysuk",
+  contact: {
+    email: "humberto@example.com",
+    phone: "+52 123 456 7890",
+    location: "Mexicali, México",
+    github: "https://github.com/humbertosuk",
+    linkedin: "https://linkedin.com/in/humbertosuk",
+  },
 };

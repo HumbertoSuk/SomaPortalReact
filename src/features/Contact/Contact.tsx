@@ -1,4 +1,4 @@
-import { personalInfo } from "../../data/profile";
+import { profile } from "../../data/profile";
 import styles from "./Contact.module.css";
 
 const Contact = () => {
@@ -7,15 +7,15 @@ const Contact = () => {
       <h2 className={styles.heading}>Contacto</h2>
       <p className={styles.paragraph}>
         Puedes escribirme a:{" "}
-        <a href={`mailto:${personalInfo.email}`} className={styles.link}>
-          {personalInfo.email}
+        <a href={`mailto:${profile.contact.email}`} className={styles.link}>
+          {profile.contact.email}
         </a>
       </p>
       <p className={styles.paragraph}>
         También me encuentras en:
         <br />
         <a
-          href={personalInfo.github}
+          href={profile.contact.github}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}
@@ -24,7 +24,7 @@ const Contact = () => {
         </a>{" "}
         |{" "}
         <a
-          href={personalInfo.linkedin}
+          href={profile.contact.linkedin}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}
