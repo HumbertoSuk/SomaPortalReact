@@ -4,24 +4,21 @@
   padding-bottom: 6rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  background-color: #1a0826; /* Fondo oscuro morado */
-  border-top: 4px solid #a855f7; /* purple-500 */
-  border-bottom: 4px solid #a855f7;
-  font-family: 'Press Start 2P', monospace;
+  @apply bg-pixel-bg border-y-4 border-pixel font-pixel;
 }
 
 .avatarContainer {
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
-  filter: drop-shadow(0 0 10px #c084fc); /* sombra morada suave */
+  filter: drop-shadow(0 0 10px theme('colors.pixel.DEFAULT')); /* sombra morada suave */
 }
 
 .avatar {
   width: 96px;
   height: 96px;
   image-rendering: pixelated;
-  border: 4px solid #e9d5ff; /* purple-200 */
+  border: 4px solid theme('colors.pixel.light');
   border-radius: 50%;
   background-color: black;
 }
@@ -30,7 +27,7 @@
   font-size: 1.75rem;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  color: #f5d0fe; /* fuchsia-200 */
+  color: theme('colors.pixel.light');
 }
 
 @media (min-width: 768px) {
@@ -40,12 +37,12 @@
 }
 
 .highlight {
-  color: #c084fc; /* purple-300 */
+  color: theme('colors.pixel.DEFAULT');
 }
 
 .subtitle {
   font-size: 0.875rem;
-  color: #e9d5ff; /* purple-200 */
+  color: theme('colors.pixel.light');
   max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
