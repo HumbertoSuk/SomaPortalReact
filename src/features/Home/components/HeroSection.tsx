@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import styles from "./HeroSection.module.css";
-import { profile } from "../../../data/profile";
+import { profile } from "@/data/profile";
 
 const HeroSection = () => {
   return (

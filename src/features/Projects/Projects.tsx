@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "./Projects.module.css";
-import projects from "../../data/projects";
-import ProjectCard from "../../components/ProjectCard";
+import projects from "@/data/projects";
+import ProjectCard from "@/components/ProjectCard";
 
 const Projects = () => {
   return (

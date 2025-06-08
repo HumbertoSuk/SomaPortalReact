@@ -1,4 +1,4 @@
-import { personalInfo } from "../../data/profile";
+import { personalInfo } from "@/data/profile";
 import styles from "./Contact.module.css";
 
 const Contact = () => {

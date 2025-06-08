@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "./SkillsSection.module.css";
-import { skills } from "../../../data/skills";
-import type { Skill } from "../../../data/skills";
+import { skills } from "@/data/skills";
+import type { Skill } from "@/data/skills";
 
 // Agrupamos las skills por categoría
 const groupedSkills: { [category: string]: Skill[] } = {};

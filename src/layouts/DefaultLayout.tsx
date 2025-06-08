@@ -1,6 +1,6 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ThemeToggle from "../components/ThemeToggle";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import ThemeToggle from "@/components/ThemeToggle";
 import type { ReactNode } from "react";
 
 interface Props {

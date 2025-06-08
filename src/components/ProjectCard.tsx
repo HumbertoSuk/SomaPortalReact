@@ -1,4 +1,4 @@
-import type { Project } from "../data/projects";
+import type { Project } from "@/data/projects";
 import styles from "./ProjectCard.module.css";
 
 const ProjectCard = ({ title, description, image, link }: Project) => {
