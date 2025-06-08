@@ -1,31 +1,36 @@
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import styles from "../styles/ProjectsSection.module.css";
+import type { Project } from "../data/projects";
 
-const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(false);
+interface Props {
+  project: Project;
+  index: number;
+}
 
-  useEffect(() => {
-    const stored = localStorage.getItem("theme");
-    if (stored === "dark") {
-      document.documentElement.classList.add("dark");
-      setDarkMode(true);
-    }
-  }, []);
+const ProjectCard = ({ project, index }: Props) => (
+  <motion.div
+    className={styles.card}
+    initial={{ opacity: 0, y: 10 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ delay: index * 0.1, duration: 0.4 }}
+    viewport={{ once: true }}
+  >
+    {project.image && (
+      <img src={project.image} alt={project.title} className={styles.image} />
+    )}
+    <h3 className={styles.title}>{project.title}</h3>
+    <p className={styles.description}>{project.description}</p>
+    {project.link && (
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.link}
+      >
+        Ver proyecto
+      </a>
+    )}
+  </motion.div>
+);
 
-  const toggle = () => {
-    const isDark = !darkMode;
-    setDarkMode(isDark);
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-    document.documentElement.classList.toggle("dark", isDark);
-  };
-
-  return (
-    <button
-      onClick={toggle}
-      className="fixed top-4 right-4 px-4 py-2 bg-white dark:bg-black text-black dark:text-white rounded-full shadow-lg border hover:bg-purple-200 dark:hover:bg-purple-800 transition-all z-50"
-    >
-      {darkMode ? "🌙 Oscuro" : "☀️ Claro"}
-    </button>
-  );
-};
-
-export default ThemeToggle;
+export default ProjectCard;
