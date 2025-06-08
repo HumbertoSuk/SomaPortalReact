@@ -1,6 +1,6 @@
 import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/aboutSection";
-import SkillsSection from "./components/skillSection";
+import AboutSection from "./components/AboutSection";
+import SkillsSection from "./components/SkillsSection";
 import styles from "./Home.module.css";
 
 const Home = () => (

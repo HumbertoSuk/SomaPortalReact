@@ -24,9 +24,11 @@ SomaPortalReactg/
 ├── src/
 │ ├── assets/ # Imágenes, íconos, etc.
 │ ├── components/ # Componentes reutilizables (Navbar, Card, etc.)
-│ ├── pages/ # Secciones del sitio (Home, Projects, Contact)
-│ ├── styles/ # Estilos globales y Tailwind
+│ ├── features/ # Secciones organizadas por dominio (Home, Projects, Contact)
+│ ├── context/ # Contextos de React
+│ ├── hooks/ # Hooks personalizados
 │ ├── data/ # Datos dummy en JSON o TS
+│ ├── layouts/ # Componentes de maquetado
 │ ├── App.tsx
 │ ├── main.tsx
 │ └── index.css

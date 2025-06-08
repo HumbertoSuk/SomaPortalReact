@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styles from "../../../styles/SkillsSection.module.css";
+import styles from "./SkillsSection.module.css";
 import { skills } from "../../../data/skills";
 import type { Skill } from "../../../data/skills";
 
