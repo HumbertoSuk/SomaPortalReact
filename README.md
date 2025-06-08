@@ -18,14 +18,24 @@ Este proyecto está desarrollado con **React**, **TypeScript**, **Vite** y **Tai
 
 ## 📁 Estructura de Carpetas
 
-src/
-├── assets/ # Imágenes y recursos
-├── components/ # Componentes reutilizables (Navbar, Card, etc.)
-├── pages/ # Vistas completas (Home, Proyectos, Contacto)
-├── styles/ # Archivos CSS y configuraciones adicionales
-├── App.tsx # Componente raíz
-├── main.tsx # Punto de entrada
-├── index.css # Estilos globales con Tailwind
+SomaPortalReactg/
+├── public/
+│ └── favicon.ico
+├── src/
+│ ├── assets/ # Imágenes, íconos, etc.
+│ ├── components/ # Componentes reutilizables (Navbar, Card, etc.)
+│ ├── pages/ # Secciones del sitio (Home, Projects, Contact)
+│ ├── styles/ # Estilos globales y Tailwind
+│ ├── data/ # Datos dummy en JSON o TS
+│ ├── App.tsx
+│ ├── main.tsx
+│ └── index.css
+├── .gitignore
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+└── vite.config.ts
 
 # React + TypeScript + Vite
 

@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-pixel;
+  }
+}
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Press Start 2P', monospace;
+  }
+
+  .bg-glass {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+}
