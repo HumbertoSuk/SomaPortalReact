@@ -2,8 +2,24 @@
 
 ¡Bienvenido a mi portafolio web!  
 Este proyecto está desarrollado con **React**, **TypeScript**, **Vite** y **Tailwind CSS**, y tiene como objetivo mostrar mis habilidades, proyectos destacados y formas de contacto profesional.
-
+ 
 ---
+
+## ⚡ Inicio Rápido
+
+Instala las dependencias y levanta el servidor de desarrollo:
+
+```bash
+npm install
+npm run dev
+```
+
+Para construir la versión optimizada y previsualizarla:
+
+```bash
+npm run build
+npm run preview
+```
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -18,15 +34,17 @@ Este proyecto está desarrollado con **React**, **TypeScript**, **Vite** y **Tai
 
 ## 📁 Estructura de Carpetas
 
-SomaPortalReactg/
+SomaPortalReact/
 ├── public/
 │ └── favicon.ico
 ├── src/
 │ ├── assets/ # Imágenes, íconos, etc.
 │ ├── components/ # Componentes reutilizables (Navbar, Card, etc.)
-│ ├── pages/ # Secciones del sitio (Home, Projects, Contact)
-│ ├── styles/ # Estilos globales y Tailwind
+│ ├── features/ # Secciones organizadas por dominio (Home, Projects, Contact)
+│ ├── context/ # Contextos de React
+│ ├── hooks/ # Hooks personalizados
 │ ├── data/ # Datos dummy en JSON o TS
+│ ├── layouts/ # Componentes de maquetado
 │ ├── App.tsx
 │ ├── main.tsx
 │ └── index.css
@@ -91,3 +109,7 @@ export default tseslint.config({
   },
 });
 ```
+
+##  Licencia
+
+Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.

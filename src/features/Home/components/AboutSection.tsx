@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styles from "../../../styles/AboutSection.module.css";
+import styles from "./AboutSection.module.css";
 import { profile } from "../../../data/profile";
 
 const AboutSection = () => {
@@ -14,6 +14,7 @@ const AboutSection = () => {
       >
         {profile.about.heading}
       </motion.h2>
+
       <motion.p
         className={styles.paragraph}
         initial={{ opacity: 0 }}

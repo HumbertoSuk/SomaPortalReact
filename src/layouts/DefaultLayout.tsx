@@ -8,7 +8,7 @@ interface Props {
 }
 
 const DefaultLayout = ({ children }: Props) => (
-  <div className="min-h-screen flex flex-col bg-gradient-to-br from-primary to-purple-600 dark:from-gray-900 dark:to-black font-pixel text-black dark:text-white">
+  <div className="min-h-screen flex flex-col bg-grid-light dark:bg-grid-dark font-pixel text-pixel-dark dark:text-pixel-light">
     <ThemeToggle />
     <Navbar />
     <main className="flex-grow p-6 flex items-center justify-center">
