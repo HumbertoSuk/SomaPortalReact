@@ -1,5 +1,5 @@
 .card {
-  @apply bg-white/10 dark:bg-white/5 p-6 rounded-xl border border-white/20 shadow hover:scale-105 transition;
+  @apply bg-pixel-light/20 dark:bg-pixel-soft/50 p-6 rounded-xl border border-pixel-dark/40 dark:border-pixel shadow hover:scale-105 transition;
 }
 
 .image {
@@ -7,13 +7,13 @@
 }
 
 .title {
-  @apply text-xl font-semibold text-white dark:text-pixel-light;
+  @apply text-xl font-semibold text-pixel-dark dark:text-pixel-light;
 }
 
 .description {
-  @apply text-white/70 dark:text-white/60 mb-4;
+  @apply text-pixel-dark/80 dark:text-pixel-light/60 mb-4;
 }
 
 .link {
-  @apply inline-block mt-2 text-pixel-light underline hover:text-white transition;
+  @apply inline-block mt-2 text-pixel-dark underline hover:text-pixel transition;
 }

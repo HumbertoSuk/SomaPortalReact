@@ -3,9 +3,9 @@
 }
 
 .heading {
-  @apply text-3xl md:text-4xl font-bold text-white dark:text-pixel-light mb-4;
+  @apply text-3xl md:text-4xl font-bold text-pixel-dark dark:text-pixel-light mb-4;
 }
 
 .text {
-  @apply text-base md:text-lg text-white/80 dark:text-white/60;
+  @apply text-base md:text-lg text-pixel-dark/80 dark:text-pixel-light/60;
 }
