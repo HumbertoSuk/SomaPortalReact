@@ -2,8 +2,24 @@
 
 ¡Bienvenido a mi portafolio web!  
 Este proyecto está desarrollado con **React**, **TypeScript**, **Vite** y **Tailwind CSS**, y tiene como objetivo mostrar mis habilidades, proyectos destacados y formas de contacto profesional.
-
+ 
 ---
+
+## ⚡ Inicio Rápido
+
+Instala las dependencias y levanta el servidor de desarrollo:
+
+```bash
+npm install
+npm run dev
+```
+
+Para construir la versión optimizada y previsualizarla:
+
+```bash
+npm run build
+npm run preview
+```
 
 ## 🚀 Tecnologías Utilizadas
 
