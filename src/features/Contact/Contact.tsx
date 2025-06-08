@@ -1,5 +1,5 @@
 import { personalInfo } from "../../data/profile";
-import styles from "../../styles/ContactSection.module.css";
+import styles from "./Contact.module.css";
 
 const Contact = () => {
   return (
