@@ -34,7 +34,7 @@ npm run preview
 
 ## 📁 Estructura de Carpetas
 
-SomaPortalReactg/
+SomaPortalReact/
 ├── public/
 │ └── favicon.ico
 ├── src/
