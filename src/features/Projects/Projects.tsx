@@ -15,7 +15,7 @@ const Projects = () => {
       >
         Proyectos Destacados
       </motion.h2>
-      <div className={styles.grid}>
+      <div className={styles.projectsGrid}>
         {projects.map((project, index) => (
           <motion.div
             key={index}
